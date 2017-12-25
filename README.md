@@ -31,6 +31,8 @@
  21. &emsp;}
  22. &emsp;若字符串B的长度大于A的长度，判断B中剩余字符中是否有空格，若有空格，空格间距离为0
  23. &emsp;&emsp;Func getExpandDistance(index_A, index_B +1);//递归
- 24. &emsp;若minExpandDistance > expDistance
- 25. &emsp;&emsp;minExpandDistance = expDistance;
- 26. }
+ 24. &emsp;expDistance += k * (A中除空格外的剩余字符 + B中除空格外的剩余字符);
+ 25. &emsp;若minExpandDistance > expDistance
+ 26. &emsp;&emsp;minExpandDistance = expDistance;
+ 27. &emsp;expDistance -= k * (A中除空格外的剩余字符 + B中除空格外的剩余字符);
+ 28. }
